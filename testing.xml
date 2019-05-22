@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+ <parameter name="BrowserName" value="chrome" />
+<suite guice-stage="DEVELOPMENT" name="Default suite">
+  <test verbose="2" name="Default test">
+
+    <classes>
+      <class name="TestNG.TestNG">
+        <parameter name="BrowserName" value="chrome" />
+  		<parameter name="user" value="kalpana" />
+  		<parameter name="email" value="kalpana@gmail.com" />
+      <methods>
+      <include name="loginOnUltimatePage" />
+      <exclude name="fillData" />      
+      </methods>
+      </class>
+      <class name="TestNG.FormDetail">
+        <parameter name="BrowserName" value="chrome" />
+       <methods>
+      <include name="form" />
+      </methods>
+      </class>
+    </classes>
+  </test> <!-- Default test -->
+</suite> <!-- Default suite -->

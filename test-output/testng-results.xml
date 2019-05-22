@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="1" ignored="1" total="4" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="352526" started-at="2019-05-20T07:08:31Z" finished-at="2019-05-20T07:14:23Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="352526" started-at="2019-05-20T07:08:31Z" finished-at="2019-05-20T07:14:23Z">
+      <class name="TestNG.FormDetail">
+        <test-method status="FAIL" signature="SetUp()[pri:0, instance:TestNG.FormDetail@18be83e4]" name="SetUp" is-config="true" duration-ms="0" started-at="2019-05-20T12:44:23Z" finished-at="2019-05-20T12:44:23Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at TestNG.TestNG.SetUp(TestNG.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:166)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method status="SKIP" signature="SetUp(java.lang.String)[pri:0, instance:TestNG.FormDetail@18be83e4]" name="SetUp" is-config="true" duration-ms="0" started-at="2019-05-20T12:44:23Z" finished-at="2019-05-20T12:44:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method status="FAIL" signature="loginOnUltimatePage(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestNG.FormDetail@18be83e4]" name="loginOnUltimatePage" duration-ms="0" started-at="2019-05-20T12:44:23Z" finished-at="2019-05-20T12:44:23Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'user' is required by @Test on method loginOnUltimatePage but has not been marked @Optional or defined
+in C:\Users\ktiwari\eclipse-workspace\MavenTest\testing.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'user' is required by @Test on method loginOnUltimatePage but has not been marked @Optional or defined
+in C:\Users\ktiwari\eclipse-workspace\MavenTest\testing.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:199)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:443)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:569)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1308)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:1036)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1126)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginOnUltimatePage -->
+        <test-method status="SKIP" signature="LaunchURL()[pri:0, instance:TestNG.FormDetail@18be83e4]" name="LaunchURL" is-config="true" duration-ms="0" started-at="2019-05-20T12:44:23Z" finished-at="2019-05-20T12:44:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchURL -->
+        <test-method status="SKIP" signature="form()[pri:1, instance:TestNG.FormDetail@18be83e4]" name="form" duration-ms="0" started-at="2019-05-20T12:44:23Z" finished-at="2019-05-20T12:44:23Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at TestNG.TestNG.SetUp(TestNG.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:166)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- form -->
+        <test-method status="SKIP" signature="close()[pri:0, instance:TestNG.FormDetail@18be83e4]" name="close" is-config="true" duration-ms="0" started-at="2019-05-20T12:44:23Z" finished-at="2019-05-20T12:44:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- TestNG.FormDetail -->
+      <class name="TestNG.TestNG">
+        <test-method status="PASS" signature="SetBrowser(java.lang.String)[pri:0, instance:TestNG.TestNG@8bd1b6a]" name="SetBrowser" is-config="true" duration-ms="5072" started-at="2019-05-20T12:38:26Z" finished-at="2019-05-20T12:38:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[BrowserName]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetBrowser -->
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:TestNG.TestNG@8bd1b6a]" name="SetUp" is-config="true" duration-ms="301904" started-at="2019-05-20T12:38:31Z" finished-at="2019-05-20T12:43:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method status="PASS" signature="LaunchURL()[pri:0, instance:TestNG.TestNG@8bd1b6a]" name="LaunchURL" is-config="true" duration-ms="324" started-at="2019-05-20T12:43:33Z" finished-at="2019-05-20T12:43:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchURL -->
+        <test-method status="PASS" signature="loginOnUltimatePage(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestNG.TestNG@8bd1b6a]" name="loginOnUltimatePage" duration-ms="50093" started-at="2019-05-20T12:43:33Z" finished-at="2019-05-20T12:44:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[kalpana]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[kalpana@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginOnUltimatePage -->
+        <test-method status="PASS" signature="BackToCurrentTab()[pri:0, instance:TestNG.TestNG@8bd1b6a]" name="BackToCurrentTab" is-config="true" duration-ms="20" started-at="2019-05-20T12:44:23Z" finished-at="2019-05-20T12:44:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BackToCurrentTab -->
+        <test-method status="PASS" signature="close()[pri:0, instance:TestNG.TestNG@8bd1b6a]" name="close" is-config="true" duration-ms="139" started-at="2019-05-20T12:44:23Z" finished-at="2019-05-20T12:44:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- TestNG.TestNG -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
